@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import api from "../api/axios";
 import { AuthContext } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Register() {
   const { setUser } = useContext(AuthContext);
@@ -47,6 +47,9 @@ export default function Register() {
         />
         <button className="btn btn-primary w-100">Register</button>
       </form>
+      <p className="mt-3 text-center">
+        Already a member? <Link to="/login">Sign in</Link>
+      </p>
     </div>
   );
 }
