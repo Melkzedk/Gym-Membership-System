@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const MembershipPlan = require("./models/MembershipPlan"); 
+const MembershipPlan = require("./models/MembershipPlan");  //model
 
 dotenv.config();
 
